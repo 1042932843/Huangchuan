@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contact_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="5dip"
+        android:textColor="#A4A4A4" />
+
+    <TextView
+        android:id="@+id/contact_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@drawable/bg_cut_line" />
+
+    <RelativeLayout
+
+        android:id="@+id/contact_content"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/contact_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_head_rect" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/contact_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="张小凡"
+                android:id="@+id/contact_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#474747"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_below="@id/contact_title"
+                android:text="13254875412"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#474747"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

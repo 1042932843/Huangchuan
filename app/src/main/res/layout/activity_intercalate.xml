@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/HeaderBack" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="设置" />
+
+        <!-- <TextView
+             android:id="@+id/complain"
+             style="@style/HeaderMenuText"
+             android:text="保存" />-->
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/modifypassword"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                    <!--   <ImageView
+                           android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:background="@drawable/ic_launcher" />-->
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/img"
+                    android:layout_toRightOf="@+id/rel"
+                    android:gravity="center_vertical"
+                    android:text="修改密码" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <ImageView
+                    android:id="@+id/img1"
+                    style="@style/ListItemAction"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wenzidaxiao"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/daxiao"
+                    android:gravity="center_vertical"
+                    android:text="字体大小" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <TextView
+                    android:id="@+id/daxiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="中" />
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+            <RelativeLayout
+                android:id="@+id/rela_huancuen"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical">
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/huancun"
+                    android:gravity="center_vertical"
+                    android:text="清除缓存" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+                <TextView
+                    android:id="@+id/huancun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/Signout"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                >
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:id="@+id/rel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   >
+
+                    <!--            <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/ic_launcher" />-->
+                </RelativeLayout>
+
+
+                <TextView
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="退出登录" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+        <!--        <ImageView
+                    style="@style/ListItemAction"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

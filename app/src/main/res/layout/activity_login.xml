@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/HeaderBack" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="登录" />
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/logo" />
+
+                <!--<View
+                    style="@style/Divider.Vertical"
+                    android:layout_marginTop="10dp" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_min_height">
+
+                    <ImageView
+                        android:id="@+id/user"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/user" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/line"
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_min_height"
+                        android:digits="0123456789xX"
+                        android:hint="请输入用户名"
+                        android:inputType="number"
+                        android:maxLength="18"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="@dimen/padding_xxlarge"
+                        android:singleLine="true"
+                        android:textColor="#ff333333"
+                        android:textSize="@dimen/font_size_normal" />
+
+
+                </RelativeLayout>
+
+
+        <!--        <View style="@style/Divider.Vertical" />-->
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/list_item_min_height">
+
+                    <ImageView
+                        android:id="@+id/pa"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/password" />
+
+                    <EditText
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/line"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/list_item_min_height"
+                        android:digits="0123456789abcdefghigjklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="@dimen/padding_xxlarge"
+                        android:singleLine="true"
+                        android:textColor="#ff333333"
+                        android:textSize="@dimen/font_size_normal" />
+                </RelativeLayout>
+
+              <!--  <View
+                    style="@style/Divider.Vertical" />
+-->
+
+                <Button
+                    android:id="@+id/login"
+                    style="@style/Button"
+                    android:layout_marginTop="20dp"
+                    android:text="登录" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <!--<com.example.administrator.huangchuang.view.PullToRefreshLayout-->
+    <!--android:id="@+id/pull"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--    <com.zeller.fastlibrary.huangchuang.view.CustomWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+    <!--</com.example.administrator.huangchuang.view.PullToRefreshLayout>-->
+
+</LinearLayout>

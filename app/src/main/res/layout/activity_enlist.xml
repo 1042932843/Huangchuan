@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/HeaderBack" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="报名" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="姓名："
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text_1"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="电话："
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/text_2"
+            android:background="@null"
+            android:hint="请输入电话号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/padding_xlarge"
+        android:text="提交报名" />
+
+</LinearLayout>

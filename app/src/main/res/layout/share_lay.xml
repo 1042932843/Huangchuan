@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 整个覆盖层 -->
+    <RelativeLayout 
+        android:id="@+id/share_lay"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="#66000000"
+        android:visibility="gone"
+        >
+        
+        <!-- 下栏底层 -->
+        <RelativeLayout 
+            android:id="@+id/share_unlay"
+            android:layout_height="250dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/list_share_background"
+            >
+            <!-- 返回按钮 -->
+            <Button 
+                android:id="@+id/share_cen"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="返      回"
+                android:textSize="20dp"
+                android:background="@drawable/button_background"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#fff"
+                />
+            <!-- 分享布局 -->
+            <LinearLayout 
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				android:layout_above="@+id/share_cen"
+				android:orientation="vertical"
+				
+			>
+			<!-- 第一栏 -->
+                <LinearLayout 
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                    >
+                    <!-- 按钮1 -->
+                    <RelativeLayout 
+                        android:id="@+id/share_btn1"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                        <ImageView 
+                        android:id="@+id/share_btn1_img"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/logo_wechat"
+                            />
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_below="@+id/share_btn1_img"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:text="微信好友"
+                            />
+                    </RelativeLayout>
+                    <!-- 按钮2 -->
+                    <RelativeLayout 
+                        android:id="@+id/share_btn2"
+                        android:layout_height="fill_parent"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                        <ImageView 
+                        android:id="@+id/share_btn2_img"
+                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/logo_wechatmoments"
+                            />
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_below="@+id/share_btn2_img"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:text="微信朋友圈"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                
+                
+
+                
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_alignTop="@+id/share_unlay"
+            />
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

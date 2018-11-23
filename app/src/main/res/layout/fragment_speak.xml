@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:fitsSystemWindows="true">
+    <!--标题头-->
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <!-- <ImageView
+             android:id="@+id/back"
+             style="@style/HeaderBack" />-->
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="信息发布">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/wancheng"
+            style="@style/HeaderMenuText"
+            android:layout_margin="10dp"
+            android:text="完成"
+
+            />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lien"
+                style="@style/ListItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击选择发布类型"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lien"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:gravity="center|left"
+                android:minHeight="48dp">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="请输入标题"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_2"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/capacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffffff"
+                        android:gravity="left|top"
+                        android:hint="请输入内容"
+                        android:inputType="textMultiLine"
+                        android:maxLength="1000"
+                        android:minHeight="80dp"
+                        android:minLines="1"
+                        android:padding="@dimen/padding_xlarge"
+                        android:textColor="#ff333333"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+            <!--    <GridView
+                    android:layout_gravity="center"
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="5dp"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp" >
+                </GridView>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbarStyle="outsideOverlay"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="4"
+                    tools:listitem="@layout/item_image"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

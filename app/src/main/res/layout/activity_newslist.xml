@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/HeaderBack" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="新闻管理" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/header">
+
+        <com.zeller.fastlibrary.huangchuang.view.PullToRefreshLayout
+            android:id="@+id/pull"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <com.zeller.fastlibrary.huangchuang.view.SwipeMenuListView
+                android:id="@+id/list"
+                style="@style/ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:childDivider="#00000000"
+                android:childIndicator="@null"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:groupIndicator="@null" />
+
+        </com.zeller.fastlibrary.huangchuang.view.PullToRefreshLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

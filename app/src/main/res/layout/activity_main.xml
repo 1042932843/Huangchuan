@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <FrameLayout
+        android:id="@+id/lay_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zeller.fastlibrary.huangchuang.view.FragmentViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+
+        <View style="@style/Divider.Vertica1px" />
+
+        <RelativeLayout
+            style="@style/NavBar"
+            android:layout_alignParentBottom="true">
+
+
+            <RadioGroup
+                android:id="@+id/navBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/mHomeFragment"
+                    style="@style/NavItem"
+                    android:checked="true"
+                    android:drawableTop="@drawable/navbar_item_nurser_icon"
+                    android:padding="5dp"
+                    android:text="首页"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="14dp" />
+
+
+                <RadioButton
+                    android:id="@+id/mPartyFragment"
+                    style="@style/NavItem"
+                    android:drawableTop="@drawable/navbar_item_user_icon"
+                    android:padding="5dp"
+                    android:text="党员之家"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="14dp" />
+
+
+                <RadioButton
+                    android:id="@+id/mSpeakFragment"
+                    style="@style/NavItem"
+                    android:drawableTop="@drawable/navbar_item_order_icon"
+                    android:padding="5dp"
+                    android:text="信息发布"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="14dp" />
+
+
+                <RadioButton
+                    android:id="@+id/mUserFragment"
+                    style="@style/NavItem"
+                    android:drawableTop="@drawable/navbar_item_project_icon"
+                    android:padding="5dp"
+                    android:text="个人中心"
+                    android:textColor="@drawable/color_radiobutton"
+                    android:textSize="14dp" />
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/homepage"
+        layout="@layout/activity_homepage" />
+
+    <include
+        android:id="@+id/shouye"
+        layout="@layout/activity_start" />
+</RelativeLayout>

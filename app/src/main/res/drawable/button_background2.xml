@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015 珠海云集软件科技有限公司.
+  ~ Website：http://www.YunJi123.com
+  ~ Mail：dev@yunji123.com
+  ~ Tel：+86-0756-8605060
+  ~ QQ：340022641(dove)
+  ~ Author：dove
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomLeftRadius="5dp"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomLeftRadius="5dp"/>
+            <solid android:color="#F1F1F1"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:topRightRadius="5dp"
+                android:bottomLeftRadius="5dp"/>
+            <solid android:color="#DD6462"/>
+        </shape>
+    </item>
+
+</selector>

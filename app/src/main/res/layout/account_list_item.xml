@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="序号" />
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/num"
+            style="@style/ListItemEdit"
+            android:hint="1"
+            android:maxLength="20" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="派驻行政村名称" />
+
+        <TextView
+            android:singleLine="false"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/cunName"
+            style="@style/ListItemEdit"
+            android:hint="谈点万营村"
+            android:maxLength="20" />
+
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="软弱涣散" />
+
+        <TextView
+            android:id="@+id/rrsh"
+            android:layout_marginLeft="49dp"
+            style="@style/ListItemEdit"
+            android:hint="否"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="贫困" />
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/poor"
+            style="@style/ListItemEdit"
+            android:hint="是"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="姓名" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginLeft="50dp"
+            style="@style/ListItemEdit"
+            android:hint="李向阳"
+            android:maxLength="20" />
+    </LinearLayout>
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="性别" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_marginLeft="50dp"
+            style="@style/ListItemEdit"
+            android:hint="男"
+            android:maxLength="20" />
+    </LinearLayout>
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="身份" />
+
+        <TextView
+            android:id="@+id/identity"
+            android:singleLine="false"
+            android:layout_marginLeft="50dp"
+            style="@style/ListItemEdit"
+            android:hint="高校"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="任期" />
+
+        <TextView
+            android:id="@+id/serviceYear"
+            android:layout_marginLeft="50dp"
+            style="@style/ListItemEdit"
+            android:hint="2年"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Vertical" />
+
+    <LinearLayout style="@style/ListItem">
+
+        <TextView
+            style="@style/ListItemText"
+            android:layout_marginLeft="10dp"
+            android:hint="派出单位及职务" />
+
+        <TextView
+            android:id="@+id/position"
+            android:singleLine="false"
+            android:layout_marginLeft="26dp"
+            style="@style/ListItemEdit"
+            android:hint="信阳师院生命科学学院党委书记"
+          />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

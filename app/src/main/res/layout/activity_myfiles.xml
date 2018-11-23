@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/header"
+        style="@style/Header">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/HeaderBack" />
+
+        <TextView
+            android:id="@+id/headerTitle"
+            style="@style/HeaderTitle"
+            android:text="我的档案" />
+
+        <TextView
+            android:id="@+id/complain"
+            style="@style/HeaderMenuText"
+            android:text="保存" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/List"
+            android:paddingBottom="@dimen/padding_xxlarge"
+            android:paddingTop="@dimen/padding_xxlarge">
+
+            <RelativeLayout
+                android:id="@+id/Myfiles"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff">
+
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="头像" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/text_1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/Headportrait"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/icon_default_user" />
+
+                </RelativeLayout>
+
+
+                <!--      <ImageView
+                          android:id="@+id/img_2"
+                          style="@style/ListItemAction"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginRight="10dp"
+                          android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+            <RelativeLayout
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="姓名" />
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/realName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toLeftOf="@+id/img_3"
+                    android:layout_toRightOf="@+id/text_4"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_3"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+            <RelativeLayout
+                android:id="@+id/rela_sex"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="性别" />
+
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/text_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    />
+
+
+
+
+             <!--   <CheckBox
+                    android:id="@+id/cb_sex"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />-->
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_4"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical"    android:visibility="gone"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="身高" />
+
+
+                <EditText
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toLeftOf="@+id/cb_height"
+                    android:layout_toRightOf="@+id/text_7"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <CheckBox
+                    android:id="@+id/cb_height"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--    <ImageView
+                        android:id="@+id/img_5"
+                        style="@style/ListItemAction"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical"    android:visibility="gone"/>
+
+            <RelativeLayout   android:visibility="gone"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="体重" />
+
+
+                <EditText
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toLeftOf="@+id/cb_weight"
+                    android:layout_toRightOf="@+id/text_8"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <CheckBox
+                    android:id="@+id/cb_weight"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--     <ImageView
+                         android:id="@+id/img_6"
+                         style="@style/ListItemAction"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="10dp"
+                         android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical"    android:visibility="gone"/>
+
+            <RelativeLayout   android:visibility="gone"
+                android:id="@+id/make_time_lay"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="出生日期" />
+
+
+
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="33dp"
+                    android:layout_toLeftOf="@+id/cb_birthday"
+                    android:layout_toRightOf="@+id/text_9"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <CheckBox
+                    android:id="@+id/cb_birthday"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_7"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical"    android:visibility="gone"/>
+
+            <RelativeLayout   android:visibility="gone"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="户籍地" />
+
+
+                <EditText
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:id="@+id/nativePlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toLeftOf="@+id/cb_nativePlace"
+                    android:layout_toRightOf="@+id/text_10"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+                <CheckBox
+                    android:id="@+id/cb_nativePlace"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--      <ImageView
+                          android:id="@+id/img_8"
+                          style="@style/ListItemAction"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginRight="10dp"
+                          android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical"    android:visibility="gone"/>
+
+            <RelativeLayout   android:visibility="gone"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="家庭电话" />
+
+
+                <EditText
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:id="@+id/homePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="33dp"
+                    android:layout_toLeftOf="@+id/cb_homePhone"
+                    android:layout_toRightOf="@+id/text_11"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <CheckBox
+                    android:id="@+id/cb_homePhone"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical" />
+
+                <!--   <ImageView
+                       android:id="@+id/img_9"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+            <RelativeLayout
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="手机" />
+
+
+                <EditText
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/text_12"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_10"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+            <View style="@style/Divider.Vertical"   />
+
+            <RelativeLayout
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="职位" />
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/departmentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/text_18"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_11"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+            <View style="@style/Divider.Vertical"  />
+
+            <RelativeLayout
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="党机关单位" />
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:layout_toRightOf="@+id/text_13"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_11"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <View style="@style/Divider.Vertical" />
+
+
+            <RelativeLayout
+                android:id="@+id/rela_rudang_time"
+                style="@style/ListItem"
+                android:layout_height="48dp"
+                android:background="#fff"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/text_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="入党日期" />
+
+
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:id="@+id/rudang_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="33dp"
+                    android:layout_toRightOf="@+id/text_14"
+                    android:gravity="center_vertical"
+                    android:text="" />
+
+
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/info"-->
+                <!--style="@style/ListItemText.Full"/>-->
+
+                <!--   <ImageView
+                       android:id="@+id/img_11"
+                       style="@style/ListItemAction"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="10dp"
+                       android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+            <View style="@style/Divider.Vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
